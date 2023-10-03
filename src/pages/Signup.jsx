@@ -2,15 +2,21 @@ import React, { useState } from 'react'
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import OAuth from '../components/OAuth';
+import { db } from '../firebase'
+import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+
+import { doc, serverTimestamp, setDoc } from "firebase/firestore";
+import { toast } from 'react-toastify';
 const Signup = () => {
   const [formData, setFormData] = useState({
-    name:"",
+    name: "",
     email: "",
     password: "",
   });
 
   const { name, email, password } = formData;
-
+const navigate=useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
   const onChange = (e) => {
@@ -20,7 +26,37 @@ const Signup = () => {
       [e.target.id]: e.target.value
     }))
   }
+  async function onSubmit(e) {
+    e.preventDefault();
 
+    try {
+
+      const auth = getAuth();
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+      updateProfile(auth.currentUser,{
+        displayName: name
+        
+      })
+
+      const user = userCredential.user;
+      // console.log(user)
+      const formDataCopy={...formData}
+      delete formDataCopy.password
+      formDataCopy.timestamp=serverTimestamp();
+      await setDoc(doc(db, "users", user.uid),formDataCopy);
+      
+      toast.success("Sign up successfull")
+      navigate("/");
+
+    } catch (error) {
+      toast.error("Something went wrong with the registration")
+      //console.log(error)
+    }
+
+
+
+  }
 
   return (
     <section>
@@ -30,8 +66,8 @@ const Signup = () => {
           <img src="./public/key.jpg" alt='key' className='w-full rounded-2xl ' />
         </div>
         <div className=' w-full md:w-[67%] lg:w-[40%] lg:mt-20 mx-7'>
-          <form >
-          <input className='mb-6 w-full px-4  py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out' type="text" id='name' value={name} onChange={onChange} placeholder='Full Name' />
+          <form onSubmit={onSubmit}>
+            <input className='mb-6 w-full px-4  py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out' type="text" id='name' value={name} onChange={onChange} placeholder='Full Name' />
 
             <input className='mb-6 w-full px-4  py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out' type="email" id='email' value={email} onChange={onChange} placeholder='Email Address' />
 
@@ -64,7 +100,7 @@ const Signup = () => {
             <div className='my-4 items-center  before:border-t flex before:flex-1 before:border-gray-300 after:border-t  after:flex-1 after:border-gray-300 '>
               <p className='text-center font-semibold mx-4'>OR</p>
             </div>
-             <OAuth />
+            <OAuth />
           </form>
         </div>
       </div>
@@ -73,3 +109,5 @@ const Signup = () => {
 }
 
 export default Signup
+
+//3:58:20
