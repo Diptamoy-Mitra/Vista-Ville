@@ -22,7 +22,7 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 const CreateListing = () => {
   const auth = getAuth();
   const navigate=useNavigate();
-  const [geolocattionEnabled, setGeolocationEnabled] = useState(true);
+  const [geolocationEnabled, setGeolocationEnabled] = useState(true);
   const [loading, setLoading] = useState(false)
 
 
@@ -94,7 +94,7 @@ const CreateListing = () => {
     let geolocation = {}
     let location;
 
-    if (geolocattionEnabled) {
+    if (geolocationEnabled) {
       const response = await fetch(`https://api.geoapify.com/v1/geocode/search?text=${address}&apiKey=e7980cf7560b4ae29c4dd6165fba85c0`);
 
       const data = await response.json()
