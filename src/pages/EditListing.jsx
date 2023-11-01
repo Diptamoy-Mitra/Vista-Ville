@@ -478,7 +478,7 @@ export default function CreateListing() {
             onChange={onChange}
             accept=".jpg,.png,.jpeg"
             multiple
-            required
+          //  required
             className="w-full px-3 py-1.5 text-gray-700 bg-white border border-gray-300 rounded transition duration-150 ease-in-out focus:bg-white focus:border-slate-600"
           />
         </div>
