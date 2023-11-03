@@ -40,11 +40,13 @@ function App() {
           <Route path="edit-listing" element={<PrivateRoute />}>
             <Route path="/edit-listing/:listingId" element={<EditListing />} />
           </Route>
-          <Route path='/category/:categoryName/:listingId' element={<Listing />} />
+          <Route path="category/:categoryName/:listingId" element={<PrivateRoute />}>
+            <Route path='/category/:categoryName/:listingId' element={<Listing />} />
+          </Route>
 
 
-        </Routes>
-      </Router>
+      </Routes>
+    </Router >
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -57,8 +59,8 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      {/* Same as */}
-      <ToastContainer />
+  {/* Same as */ }
+  <ToastContainer />
 
     </>
   )
