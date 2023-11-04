@@ -168,10 +168,10 @@ export default function CreateListing() {
             console.log("Upload is " + progress + "% done");
             switch (snapshot.state) {
               case "paused":
-                console.log("Upload is paused");
+              //  console.log("Upload is paused");
                 break;
               case "running":
-                console.log("Upload is running");
+               // console.log("Upload is running");
                 break;
             }
           },
