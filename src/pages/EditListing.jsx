@@ -198,6 +198,7 @@ export default function CreateListing() {
       return;
     });
 
+   
     const formDataCopy = {
       ...formData,
       imgUrls,
@@ -205,7 +206,6 @@ export default function CreateListing() {
       timestamp: serverTimestamp(),
       userRef: auth.currentUser.uid,
     };
-    
     delete formDataCopy.images;
     !formDataCopy.offer && delete formDataCopy.discountedPrice;
     delete formDataCopy.latitude;
