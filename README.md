@@ -109,7 +109,7 @@ We welcome contributions to the Real Estate Application. If you'd like to contri
 ![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/cb130060-3005-4539-832c-0455d41923f4)
 
 ## Upcoming features 
-1. Add Search ,Sorting, Filtering features
+1. Add Searching ,Sorting, Filtering features
 2. Develop The UI and Add more functionalities
 3. Make more user friendly etc.
 
