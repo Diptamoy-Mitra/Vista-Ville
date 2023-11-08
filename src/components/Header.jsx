@@ -7,10 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [pageState, setPageState] = useState("Sign In");
   const auth = getAuth();
-  //const [] 
-
-
-
+ 
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) =>{
