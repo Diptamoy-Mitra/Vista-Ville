@@ -46,7 +46,7 @@ const Signin = () => {
         {/* added full with to properly maintain the responsiveness  */}
         <div className='flex justify-center flex-wrap items-center px-6 py-11 max-w-6xl w-full'>
           <div className='md:w-[67%] lg:w-[50%] mb-12 md:mb-6'>
-            <img src="./public/login-img.png" alt='key' className='w-full rounded-2xl ' />
+            <img src="https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg" alt='key' className='w-full rounded-2xl ' />
           </div>
           <div className=' w-full md:w-[67%] lg:w-[40%] lg:mt-20 mx-7 lg:ml-20'>
             <form onSubmit={onSubmit}>
