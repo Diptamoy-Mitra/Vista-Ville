@@ -14,3 +14,9 @@ body{
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
        background: #a8dadc !important;
 }
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

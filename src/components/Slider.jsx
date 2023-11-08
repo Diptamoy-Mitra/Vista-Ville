@@ -65,7 +65,7 @@ export default function Slider() {
                   background: `url(${data.imgUrls[Math.floor(Math.random() * data.imgUrls.length)]}) center, no-repeat`,
                   backgroundSize: "cover",
                 }}
-                className="relative w-full h-[300px] overflow-hidden  mb-2 ml-1 mr-1"
+                className="relative w-[100%] h-[300px] overflow-hidden  mb-2  "
               ></div>
               <p className="text-[#f1faee] absolute left-1 top-3 font-medium max-w-[90%] bg-[#457b9d] shadow-lg opacity-90 p-2 rounded-br-3xl">{data.name}</p>
               <p className="text-[#f1faee] absolute left-1 bottom-3 font-medium max-w-[90%] bg-[#e63946] shadow-lg opacity-90 p-2 rounded-tr-3xl">${data.discountedPrice ?? data.regularPrice}
