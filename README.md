@@ -44,12 +44,12 @@ To get started with the Real Estate Application, follow the installation and usa
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/real-estate-app.git
+   git clone https://github.com/yourusername/vista-ville.git
    ```
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd real-estate-app
+   cd vista-ville
    ```
 
 3. **Install Dependencies:**
