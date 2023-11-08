@@ -63,7 +63,7 @@ const navigate=useNavigate();
       <h1 className='text-3xl text-center mt-6 font-bold '>SIGN UP</h1>
       <div className='flex justify-center flex-wrap items-center px-6 py-11 max-w-6xl'>
         <div className='md:w-[67%] lg:w-[50%] mb-12 md:mb-6'>
-          <img src="./public/key.jpg" alt='key' className='w-full rounded-2xl ' />
+          <img src="https://static.vecteezy.com/system/resources/previews/016/140/880/original/register-now-icon-in-comic-style-registration-cartoon-illustration-on-isolated-background-member-notification-splash-effect-sign-business-concept-vector.jpg" alt='key' className='w-full rounded-2xl ' />
         </div>
         <div className=' w-full md:w-[67%] lg:w-[40%] lg:mt-20 mx-7'>
           <form onSubmit={onSubmit}>
