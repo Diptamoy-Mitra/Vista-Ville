@@ -17,7 +17,7 @@ const ForgotPassword = () => {
       <h1 className='text-3xl text-center mt-6 font-bold '>FORGOT PASSWORD</h1>
       <div className='flex justify-center flex-wrap items-center px-6 py-11 max-w-6xl'>
         <div className='md:w-[67%] lg:w-[50%] mb-12 md:mb-6'>
-          <img src="./public/forgot-password.avif" alt='key' className='w-full rounded-2xl ' />
+          <img src="https://img.freepik.com/premium-vector/forgot-password-concept-isolated-white_263070-194.jpg?w=740" alt='key' className='w-full rounded-2xl ' />
         </div>
         <div className=' w-full md:w-[67%] lg:w-[40%] lg:mt-20 mx-7'>
           <form >
