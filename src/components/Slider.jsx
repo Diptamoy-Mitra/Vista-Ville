@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Spinner from "../components/Spinner";
 import { db } from "../firebase";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { toast } from 'react-toastify';
 import SwiperCore, {
   EffectFade,
   Autoplay,
@@ -38,6 +39,7 @@ export default function Slider() {
   }, [])
 
   if (loading) {
+    toast.success('This site is under development, more features are coming soon...')
     return <Spinner />
   }
   if (listings.length === 0) {
