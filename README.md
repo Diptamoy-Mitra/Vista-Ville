@@ -1,4 +1,4 @@
-# Vista Ville README
+# Vista Ville (Under Building....) (This is version 1)
 
 Welcome to the Real Estate Application Vista Ville! This application is designed to provide a comprehensive platform for real estate professionals and individuals to manage property listings, search for properties, and connect with potential buyers and sellers. It is built using React.js, Firebase, Tailwind CSS, and various external React libraries.
 
@@ -44,12 +44,12 @@ To get started with the Real Estate Application, follow the installation and usa
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/real-estate-app.git
+   git clone https://github.com/yourusername/vista-ville.git
    ```
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd real-estate-app
+   cd vista-ville
    ```
 
 3. **Install Dependencies:**
@@ -99,4 +99,19 @@ We welcome contributions to the Real Estate Application. If you'd like to contri
 4. Test your changes thoroughly.
 5. Create a pull request with a clear description of your changes.
 
-#
+## Some Picture Of This Project
+
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/6973e412-deb5-447f-bf17-8e4490fa7e84)
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/8ef3465c-412e-4668-b183-96ddb4eeb3f4)
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/66500b5b-9479-4864-83c2-03a3a9a6c870)
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/27e6bc73-3de2-43b7-ad7b-8af43a0c4bcf)
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/4f15ec24-afe6-4bb4-85f7-5e48caf6399b)
+![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/cb130060-3005-4539-832c-0455d41923f4)
+
+## Upcoming features 
+1. Add Searching ,Sorting, Filtering features
+2. Develop The UI and Add more functionalities
+3. Make more user friendly etc.
+
+
+
