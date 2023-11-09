@@ -7,7 +7,6 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { toast } from 'react-toastify';
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
