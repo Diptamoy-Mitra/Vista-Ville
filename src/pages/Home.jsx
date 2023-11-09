@@ -7,6 +7,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
+import { toast } from 'react-toastify';
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -38,6 +39,7 @@ const Home = () => {
             data: doc.data(),
           });
         });
+        toast.success("This is under development, more features are coming soon...")
         setOfferListings(listings);
       } catch (error) {
         console.log(error);
@@ -106,6 +108,8 @@ const Home = () => {
     }
     fetchListings();
   }, []);
+
+
 
 
   return (
