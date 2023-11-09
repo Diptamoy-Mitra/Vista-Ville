@@ -39,7 +39,7 @@ const Home = () => {
             data: doc.data(),
           });
         });
-        toast.success("This site is under development, more features are coming soon...")
+        
         setOfferListings(listings);
       } catch (error) {
         console.log(error);
