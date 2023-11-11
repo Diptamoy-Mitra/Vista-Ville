@@ -108,6 +108,10 @@ We welcome contributions to the Real Estate Application. If you'd like to contri
 ![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/4f15ec24-afe6-4bb4-85f7-5e48caf6399b)
 ![image](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/cb130060-3005-4539-832c-0455d41923f4)
 
+## Firebase Listings
+![Screenshot (96)](https://github.com/Diptamoy-Mitra/Vista-Ville/assets/91617575/a1861d16-9f1a-4826-9472-c5a40d97a942)
+
+
 ## Upcoming features 
 1. Add Searching ,Sorting, Filtering features
 2. Develop The UI and Add more functionalities
