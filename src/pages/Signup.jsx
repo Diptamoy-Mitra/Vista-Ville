@@ -16,6 +16,8 @@ const Signup = () => {
   });
 
   const { name, email, password } = formData;
+  // this is change by sumit
+  console.log(name,email,password);
 const navigate=useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
@@ -51,7 +53,7 @@ const navigate=useNavigate();
 
     } catch (error) {
       toast.error("Something went wrong with the registration")
-      //console.log(error)
+      console.log(error)
     }
 
 
